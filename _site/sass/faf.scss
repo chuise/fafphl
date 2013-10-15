@@ -1,0 +1,86 @@
+$ratio: "ratio-1", "ratio-2", "helvetica neue", arial, sans-serif;
+$museo: "museo-slab-1","museo-slab-2", georgia, serif;
+
+$base-font-size: 22px;
+
+$pink: #ec008b;
+$purple: #b71178;
+
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: $ratio;
+  font-size: $base-font-size;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+a {
+  color: $pink;
+  text-decoration: none;
+  
+  &:hover {
+    color: $purple;
+  }
+}
+
+header {
+
+  #logo {
+    background-image: url('/images/faf_phl_logo.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 170px 72px;
+    height: 72px;
+    margin: 40px 40px 0 40px;
+    text-indent: -30000px;
+    width: 170px;
+  }
+}
+
+section {
+  padding: 20px 40px 40px;
+}
+
+#intro {
+}
+
+#how-does-it-work {
+  section { padding: 0; }
+  
+  h2 {
+    background-color: $pink;
+    color: #fff;
+    font-family: $museo;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px 40px;
+    margin: 0;
+  }
+  
+  .content-wrapper {
+    padding: 20px 40px;
+  }
+  
+  h3 { font-weight: 400; }
+}
+
+// Desktop
+@media screen and (min-width: 800px) {
+  #page-wrapper {
+    position: relative;
+    
+    #intro {
+      float: left;
+      width: 40%;
+    }
+  
+    #how-does-it-work {
+      margin-left: 40%;
+      width: 60%;
+    }
+  }
+}

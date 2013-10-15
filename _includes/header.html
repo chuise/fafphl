@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{page.title}}</title>
+	
+	<meta http-equiv="imagetoolbar" content="false">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="author" content="Kevin M. Jackson" />
+  <meta name="description" content="{{ page.description }}" />
+	{% if page.tags %}<meta name="keywords" content="{% for tag in page.tags%}{% if forloop.last %}{{ tag }}{% else %}{{ tag }}, {% endif %}{% endfor %}" />{% endif %}
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:url" content="http://phl.freeartfriday.org" />
+	<meta name="twitter:title" content="{{ page.title }}" />
+	<meta name="twitter:description" content="{{ page.description }}" />
+	<meta name="twitter:site" content="@fafphl" />
+	<meta name="twitter:image" content="http://phl.freeartfriday.org/images/twitter-card-image.png" />
+
+	<meta property="og:site_name" content="FAF PHL" />
+	<meta property="og:title" content="FAF PHL" />
+	<meta property="og:type" content="article" />
+	<meta property="og:article:author" content="Kevin M. Jackson" />
+	<meta property="og:url" content="http://phl.freeartfriday.org" />
+	
+  <script type="text/javascript" src="//use.typekit.net/ijh5uik.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/base-min.css">
+  <link rel="stylesheet" href="faf.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>

@@ -15,7 +15,7 @@ a {
     color: #b71178; }
 
 header #logo {
-  background-image: url("/images/faf_phl_logo.svg");
+  background-image: url("images/faf_phl_logo.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 170px 72px;
